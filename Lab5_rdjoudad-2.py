@@ -5,3 +5,13 @@ Start with 13 sticks, players alternate trying to remove sticks, player who pick
 No starter code 
 2/14/2026
 """
+sticks_max = 4
+sticks_min = 1
+sticks_total = 13
+current_player = "Player One"
+sticks_in_pile = True
+
+print("Welcome to the Pick Up Sticks game!")
+print("There is a pile of 13 sticks presented to you.")
+print("You'll be able to pick up sticks, up to 4 at a time!")
+print("The player who picks up the last stick wins, good luck!")
