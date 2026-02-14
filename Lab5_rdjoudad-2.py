@@ -20,16 +20,15 @@ while sticks_in_pile:
     print(f"There are {sticks_total} stick(s) left.")
     print(current_player)
     sticks_taken = int(input("How many sticks do you want? "))
-    while sticks_taken > sticks_max or sticks_taken < sticks_min:
+    while sticks_taken > sticks_max or sticks_taken < sticks_min or sticks_taken > sticks_total:
         print(f"You can't take {sticks_taken} sticks")
         sticks_taken = int(input("How many sticks do you want? "))
-    
     sticks_total -= sticks_taken
-
-if sticks_total == 0:
-    print(f"{current_player} is the winner!")
-else:
-    if current_player == "Player One":
-        current_player = "Player Two"
+    if sticks_total > 0:
+        if current_player == "Player One":
+            current_player = "Player Two"
+        else:
+            current_player = "Player One"
     else:
-        current_player = "Player One"
+        print(f"{current_player} wins!")
+
