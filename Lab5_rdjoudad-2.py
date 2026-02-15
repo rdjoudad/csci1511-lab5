@@ -1,6 +1,6 @@
 """
 Pick Up Sticks Game In Python
-Ryma Djoudad
+rdjoudad
 Start with 13 sticks, players alternate trying to remove sticks, player who picks up the last stick wins
 No starter code 
 2/14/2026
@@ -12,8 +12,8 @@ current_player = "Player 1"
 sticks_in_pile = True
 
 print("Welcome to the Pick Up Sticks game!")
-print("There is a pile of 13 sticks presented to you.")
-print("You'll be able to pick up sticks, up to 4 at a time!")
+print("Each player takes turns picking up from 1")
+print("to 4 sticks from a pile of 13 sticks.")
 print("The player who picks up the last stick wins, good luck!")
 
 while sticks_in_pile:
