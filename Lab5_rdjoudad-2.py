@@ -8,7 +8,7 @@ No starter code
 sticks_max = 4
 sticks_min = 1
 sticks_total = 13
-current_player = "Player One"
+current_player = "Player 1"
 sticks_in_pile = True
 
 print("Welcome to the Pick Up Sticks game!")
@@ -25,13 +25,13 @@ while sticks_in_pile:
         sticks_taken = int(input("How many sticks do you want? "))
     sticks_total -= sticks_taken
     if sticks_total > 0:
-        if current_player == "Player One":
-            current_player = "Player Two"
+        if current_player == "Player 1":
+            current_player = "Player 2"
         else:
-            current_player = "Player One"
+            current_player = "Player 1"
     else:
         print(f"{current_player} wins!")
         print("Press the enter key to quit. ")
         input()
         break
-    current_player = "Player Two"
+    current_player = "Player 2"
