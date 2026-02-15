@@ -34,3 +34,4 @@ while sticks_in_pile:
         print("Press the enter key to quit. ")
         input()
         break
+    current_player = "Player Two"
