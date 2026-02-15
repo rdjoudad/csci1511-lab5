@@ -31,4 +31,6 @@ while sticks_in_pile:
             current_player = "Player One"
     else:
         print(f"{current_player} wins!")
-
+        print("Press the enter key to quit. ")
+        input()
+        break
